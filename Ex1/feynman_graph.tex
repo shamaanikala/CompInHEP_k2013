@@ -1,0 +1,100 @@
+\documentclass{article}
+
+\usepackage{feynmf}
+\usepackage{subfig}
+%\bibliographystyle{lesHouches}
+\bibliographystyle{plain}
+
+% https://phystev.cnrs.fr/2017-proceedings-templates-and-instructions lesHouches.bst
+
+\begin{document}
+% \begin{fmffile}{electron_positron1}
+%\begin{figure}{h}
+% \centering
+% \parbox{50mm}{
+% \begin{fmfchar*}(60,60)
+	% \fmfleft{i1,i2}
+	% \fmfright{o1,o2}
+	% \fmf{fermion,tension=0.3}{i1,v1}
+	% \fmf{fermion,tension=0.7}{v2,i2}
+	% \fmf{fermion,tension=0.6}{v1,v2}
+	% \fmf{photon,tension=0.4}{v1,o1}
+	% \fmf{photon,tension=0.3}{v2,o2}
+		% \put(-5,-5){\small $e^+$}
+		% \put(-5,60){\small $e^-$}
+		% \put(60,60){\small $\gamma$}
+		% \put(60,-5){\small $\gamma$}
+% \end{fmfchar*}}
+%\end{figure}
+% \end{fmffile}
+
+% \begin{fmffile}{electron_positron2}
+%\begin{figure}{h}
+% \centering
+% \parbox{50mm}{
+% \begin{fmfchar*}(60,60)
+	% \fmfleft{i1,i2}
+	% \fmfright{o1,o2}
+	% \fmf{fermion,tension=0.6}{i1,v1}
+	% \fmf{fermion,tension=0.3}{v2,i2}
+	% \fmf{fermion,tension=0.6}{v1,v2}
+	% \fmf{photon,tension=0.4}{v1,o1}
+	% \fmf{photon,tension=0.3}{v2,o2}
+		% \put(-5,-5){\small $e^+$}
+		% \put(-5,60){\small $e^-$}
+		% \put(60,60){\small $\gamma$}
+		% \put(60,-5){\small $\gamma$}
+% \end{fmfchar*}}
+%\end{figure}
+% \end{fmffile}
+
+\begin{figure}%
+    \centering
+    \subfloat{
+	\begin{fmffile}{electron_positron1}
+	\centering
+	\parbox{50mm}{
+	\begin{fmfchar*}(60,60)
+	\fmfleft{i1,i2}
+	\fmfright{o1,o2}
+	\fmf{fermion,tension=0.3}{i1,v1}
+	\fmf{fermion,tension=0.7}{v2,i2}
+	\fmf{fermion,tension=0.6}{v1,v2}
+	\fmf{photon,tension=0.4}{v1,o1}
+	\fmf{photon,tension=0.3}{v2,o2}
+		\put(-5,-5){\small $e^+$}
+		\put(-5,60){\small $e^-$}
+		\put(60,60){\small $\gamma$}
+		\put(60,-5){\small $\gamma$}
+	\end{fmfchar*}}
+	%\end{figure}
+	\end{fmffile}
+	}%
+    \qquad
+    \subfloat{
+	\begin{fmffile}{electron_positron2}
+	%\begin{figure}{h}
+	\centering
+	\parbox{50mm}{
+	\begin{fmfchar*}(60,60)
+	\fmfleft{i1,i2}
+	\fmfright{o1,o2}
+	\fmf{fermion,tension=0.6}{i1,v1}
+	\fmf{fermion,tension=0.3}{v2,i2}
+	\fmf{fermion,tension=0.6}{v1,v2}
+	\fmf{photon,tension=0.4}{v1,o1}
+	\fmf{photon,tension=0.3}{v2,o2}
+		\put(-5,-5){\small $e^+$}
+		\put(-5,60){\small $e^-$}
+		\put(60,60){\small $\gamma$}
+		\put(60,-5){\small $\gamma$}
+	\end{fmfchar*}}
+	%\end{figure}
+	\end{fmffile}
+	}%
+    \caption{Feynman graphs for the lowest order contributions to electron-
+positron annihilation \cite{HEP-REF}.}%
+\end{figure}
+
+\bibliography{feynman_graph}
+\end{document}
